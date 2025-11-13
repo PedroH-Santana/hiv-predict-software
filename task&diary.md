@@ -11,10 +11,10 @@ Assim, HEMOSCOPE-X significa literalmente:
 > “Instrumento que observa o sangue para revelar o desconhecido.”
 O nome carrega a essência do projeto: unir ciência, tecnologia e compaixão para ampliar o alcance da detecção precoce do HIV, especialmente em regiões onde o acesso a testes específicos ainda é limitado.
 
-## [Requisitos](hiv-predict-software/escopo/requisitos.md)
+## [Requisitos](/escopo/requisitos.md)
 Os requisitos de software do projeto designam as necessidades, limites e resultados esperados mediante a missão e desenvolvimento do HEMOSCOPE-X.
 
-## [Arquitetura](hiv-predict-software/escopo/design-arquitetura.md)
+## [Arquitetura](/escopo/design-arquitetura.md)
 A arquitetura do projeto designa as métricas que serão seguidas para que o software funcione baseados nos requisitos escalados para o projeto.
 
 # Diário de Bordo - Seção de discussão dos conhecimentos adquiridos por semana
