@@ -1,14 +1,14 @@
 # HEMOSCOPE-X - Software especializado em hemogramas e dados clínicos
 ## Origem
-A ferramenta HEMOSCOPE-X surgiu devido à disciplina [*Tópicos em Engenharia de Software*](https://github.com/kyriosdata/EngenheiroAumentado), na qual nós, alunos da *Universidade Federal de Goiás*, utilizamos modelos de inteligência artificial para assistirmos no desenvolvimento de softwares na área da saúde.
+A ferramenta **HEMOSCOPE-X** surgiu devido à disciplina [*Tópicos em Engenharia de Software*](https://github.com/kyriosdata/EngenheiroAumentado), na qual nós, alunos da *Universidade Federal de Goiás*, utilizamos modelos de inteligência artificial para assistirmos no desenvolvimento de softwares na área da saúde.
 ## Objetivo
-Por meio de uma análise de dados estruturados, o Hemoscope-X deve prever a progressão da doença HIV, a eficácia de tratamentos e o risco de resistência a medicamentos, servindo como uma ferramenta de apoio à decisão para profissionais de saúde.
+Por meio de uma análise de dados estruturados, o Hemoscope-X deve **prever a progressão da doença HIV**, a eficácia de tratamentos e o risco de resistência a medicamentos, servindo como uma ferramenta de **apoio** à decisão para profissionais de saúde.
 ## Nome
 É uma junção de três elementos centrais:
-* HEMO → do grego haîma, que significa sangue — referência direta ao hemograma, a base dos dados analisados.
-* SCOPE → do grego skopein, “observar” ou “examinar” — simboliza a capacidade do software de enxergar além do visível, detectando padrões imperceptíveis a olho nu.
-* X → representa o fator desconhecido, o que está oculto e precisa ser revelado — neste caso, a presença de infecção pelo HIV em parâmetros hematológicos.
-Assim, HEMOSCOPE-X significa literalmente:
+- *HEMO* → do grego haîma, que significa sangue — referência direta ao hemograma, a base dos dados analisados.
+- *SCOPE* → do grego skopein, “observar” ou “examinar” — simboliza a capacidade do software de enxergar além do visível, detectando padrões imperceptíveis a olho nu.
+- *X* → representa o fator desconhecido, o que está oculto e precisa ser revelado — neste caso, a presença de infecção pelo HIV em parâmetros hematológicos.
+Assim, _HEMOSCOPE-X_ significa literalmente:
 > “Instrumento que observa o sangue para revelar o desconhecido.”
 O nome carrega a essência do projeto: unir ciência, tecnologia e compaixão para ampliar o alcance da detecção precoce do HIV, especialmente em regiões onde o acesso a testes específicos ainda é limitado.
 
