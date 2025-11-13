@@ -1,4 +1,5 @@
-### Sobre Arquitetar Softwares
+# Arquitetura de Software
+## Sobre Arquitetar Softwares
 O Arquiteto de Software é responsável por definir a estrutura do sistema, escolher as tecnologias e frameworks mais adequados e garantir que todas as decisões estejam alinhadas com os objetivos do negócio. 
 Ao pensar em exemplos de arquitetura de software que o profissional se responsabiliza, podemos incluir:
 * Criação de diagramas de arquitetura;
