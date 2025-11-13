@@ -17,11 +17,12 @@ Os requisitos de software do projeto designam as necessidades, limites e resulta
 ## [Arquitetura](/escopo/design-arquitetura.md)
 A arquitetura do projeto designa as métricas que serão seguidas para que o software funcione baseados nos requisitos escalados para o projeto.
 
-# [Diário de Bordo](/diario) - Seção de discussão dos conhecimentos adquiridos por semana
+## [Diário de Bordo](/diario)
+Seção de discussão dos conhecimentos adquiridos por semana conforme desenvolvemos a ferramenta e estudamos Tópicos de Engenharia de Software.
 
-[x] Semana 3/11
-[x] Semana 10/11
-[] Semana 17/11
-[] Semana 24/11
-[] Semana 1/12
-[] Semana 8/12
+- [x] Semana 3/11 & prévias - Notion para esclarecimento de tarefa, informações e ideias.
+- [x] Semana 10/11 - Construção e aprimoramento de requisitos, arquitetura, etc.
+- [] Semana 17/11
+- [] Semana 24/11
+- [] Semana 1/12
+- [] Semana 8/12
