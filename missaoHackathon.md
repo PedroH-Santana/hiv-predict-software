@@ -38,4 +38,5 @@ Dev 3 (IA/LLM): Foca no módulo de predição (chamadas ao LLM).
 | predictor.py: Criar prompt e lógica para US3 (Resistência) | US3 | Dev 3 (IA) | 6h |
 | app.py: Lógica do botão "Analisar" (Chamar DB e Predictor) | US2, US3 | Dev 2 (Data) | 6h |
 | app.py: UI de visualização dos resultados (US2, US3) | US2, US3 | Dev 1 (UI) | 8h |
-| Integração Final e Testes	| Todos | Todos | 5h |
+| Integração Final e Testes	|   | Todos | 5h |
+| Total | | | 48 horas |
