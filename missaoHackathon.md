@@ -41,6 +41,9 @@ Dev 3 (IA/LLM): Foca no módulo de predição (chamadas ao LLM).
 | Integração Final e Testes	|   | Todos | 5h |
 | Total | | | 48 horas |
 
+## Diagrama Proposto
+![mermaidlive-diagram](diagram.png)
+
 ### Database.py Proposto
 Em vez de SQL puro, a IA gera o módulo database.py que cria o banco de dados.
 ```
