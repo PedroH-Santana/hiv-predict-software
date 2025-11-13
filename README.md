@@ -17,25 +17,11 @@ Os requisitos de software do projeto designam as necessidades, limites e resulta
 ## [Arquitetura](/escopo/design-arquitetura.md)
 A arquitetura do projeto designa as métricas que serão seguidas para que o software funcione baseados nos requisitos escalados para o projeto.
 
-# Diário de Bordo - Seção de discussão dos conhecimentos adquiridos por semana
+# [Diário de Bordo](/diario) - Seção de discussão dos conhecimentos adquiridos por semana
 
-## Semana 10/11
-### Sobre Arquitetar Softwares
-O Arquiteto de Software é responsável por definir a estrutura do sistema, escolher as tecnologias e frameworks mais adequados e garantir que todas as decisões estejam alinhadas com os objetivos do negócio. 
-Ao pensar em exemplos de arquitetura de software que o profissional se responsabiliza, podemos incluir:
-* Criação de diagramas de arquitetura;
-* Revisão de código;
-* Orientação da equipe de desenvolvimento;
-* Validação da arquitetura ao longo do ciclo de vida do software.
-Com a incorporação da IA no SDLC, o arquiteto aumenta a assertividade de testes e otimiza a tomada de decisão.
-### Quais são os tipos de arquitetura de sistemas?
-1. Monolítica: Historicamente, a arquitetura monolítica foi a abordagem padrão, em que todas as funcionalidades do sistema eram integradas em um único bloco de código. Embora seja simples de implementar, essa abordagem é limitada pela falta de flexibilidade e pela dificuldade em escalar ou modificar partes específicas sem afetar o todo. Isso é muito claro na própria noção de “god-class”, ou “classe-deus”, conceito que representa o código todo em um único arquivo — uma prática muito comum na produção de software “tradicional”. 
-2. Microsserviços: Em contraste com a monolítica, a arquitetura de microsserviços segmenta o sistema em serviços independentes que se comunicam entre si. Essa abordagem permite uma escalabilidade granular, onde cada serviço pode ser desenvolvido, implementado e escalado de forma independente. Assim, ela é ideal para sistemas que precisam evoluir rapidamente em resposta a mudanças nas necessidades do mercado. É extremamente útil em grandes aplicações, como sistemas de streaming online ou plataformas de CRM, por exemplo. 
-3. Model-View-Controller (MVC): A arquitetura MVC separa a aplicação em três componentes principais: Modelo, Visão e Controlador. Modelo: cuida das regras de negócio, funcionalidades e questões ligadas ao objetivo principal do software; Visão: gerencia o que é mostrado ao usuário, ou seja, a interface; Controller: lida com a interação entre a visão e o modelo, bem como das respostas dos usuários na interação com o sistema (como movimentos do mouse e cliques). Essa separação facilita a manutenção e evolução do software, permitindo que cada componente seja desenvolvido de forma independente, melhorando a modularidade e a reutilização de código.
-4. Orientada a serviços (SOA): A SOA compartilha semelhanças com os microsserviços, afinal, foi ela que deu origem a esse subtipo, mas com um foco maior em serviços reutilizáveis e bem definidos. A principal diferença está na forma como os serviços são expostos e consumidos, geralmente por meio de um barramento de serviços (ESB), o que facilita a integração com sistemas legados.
-5. Em camadas (Layers): A arquitetura em camadas organiza o sistema em diferentes níveis, cada um com uma função específica, desde a interface do usuário até o back-end. Essa abordagem permite uma organização aprimorada e controle sobre as mudanças em cada camada, promovendo uma maior facilidade na manutenção e atualização do sistema.
-6. Cliente-servidor (client-server): A arquitetura cliente-servidor é um modelo clássico, que divide o sistema em duas partes principais: o cliente, que solicita serviços, e o servidor, que os fornece. Esse tipo de arquitetura é mais comum em aplicações web e empresariais, onde o servidor centraliza a lógica de negócios e os dados, enquanto os clientes executam a interface do usuário.
-7. Pipes-and-filters (PF): Na arquitetura de software pipes-and-filters, um sistema funciona como uma série de componentes que processam dados em uma sequência linear, em que cada componente (filtro) realiza uma transformação nos dados antes de passá-los para o próximo. Se você busca exemplos para esse tipo de arquitetura de software, vale apontar que essa abordagem é frequentemente utilizada em processamento de dados e pipelines de ETL (Extract, Transform, Load).
-8. Orientado a eventos (event-driven): A arquitetura de software orientada a eventos baseia-se na produção, detecção e consumo de eventos. Nesse modelo, componentes se comunicam entre si a partir de eventos, permitindo um sistema altamente desacoplado e reativo. O uso desse tipo de arquitetura de software é mais comum em sistemas distribuídos, especialmente em ambientes que necessitam de alta escalabilidade e resiliência.
-9. Baseado em espaço (space-based): A arquitetura baseada em espaço (space-based) serve para lidar com a escalabilidade em sistemas distribuídos. Ela utiliza a noção de “espaços” como repositórios compartilhados de dados e processos, permitindo que múltiplos nós operem de maneira independente. Essa arquitetura é uma boa escolha para sistemas que precisam escalar horizontalmente sem centralizar a carga de trabalho.
-10. Publicador-Inscrito (Pub/Sub): Por fim, entre os tipos de arquitetura de software, podemos citar o Publicador-Inscrito (Pub/Sub), um modelo em que os produtores de mensagens (publicadores) não enviam mensagens diretamente aos consumidores (inscritos), mas por meio de um intermediário. Esse intermediário distribui as mensagens para todos os inscritos, tornando essa abordagem muito útil em sistemas que exigem comunicação assíncrona e alta flexibilidade na adição ou remoção de componentes.
+[x] Semana 3/11
+[x] Semana 10/11
+[] Semana 17/11
+[] Semana 24/11
+[] Semana 1/12
+[] Semana 8/12
