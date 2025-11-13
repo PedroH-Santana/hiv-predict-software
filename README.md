@@ -20,12 +20,12 @@ A arquitetura do projeto designa as métricas que serão seguidas para que o sof
 
 ## [Diário de Bordo](/diario)
 Seção de discussão dos conhecimentos adquiridos por semana conforme desenvolvemos a ferramenta e estudamos Tópicos de Engenharia de Software.
-- [x] Semana 3/11 & prévias - Notion para esclarecimento de tarefa, informações e ideias.
-- [x] Semana 10/11 - Construção e aprimoramento de requisitos, arquitetura, etc.
-- [ ] Semana 17/11
-- [ ] Semana 24/11
-- [ ] Semana 1/12
-- [ ] Semana 8/12
+- [x] Semana 2/11 & prévias - Notion para esclarecimento de tarefa, informações e ideias.
+- [x] Semana 9/11 - Construção e aprimoramento de requisitos, arquitetura, etc.
+- [ ] Semana 16/11
+- [ ] Semana 23/11
+- [ ] Semana 30/11
+- [ ] Semana 7/12
 
 ## [Diagrama](diagram.png)
 Na missão 2 _"Hackathon"_ é requisitado um diagrama de arquitetura inteligente. Diante disso, o modelo gerou o seguinte diagrama de arquitetura (Monolith Streamlit) simplificada:
