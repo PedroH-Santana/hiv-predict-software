@@ -30,7 +30,7 @@ Dev 3 (IA/LLM): Foca no módulo de predição (chamadas ao LLM).
 | Tarefa | História (US) | Responsável (Dev) | Estimativa (Horas) |
 | --------------------- | --------------------- | --------------------- | --------------------- |
 | Configurar ambiente (venv, pip install streamlit) | Todos | Dev 1 | 1h |
-| Criar módulo database.csv | US1 | Dev 2 | 2h |
+| Criar módulo database.py | US1 | Dev 2 | 2h |
 | Criar módulo predictor.py (função de chamada LLM) | US2, US3 | Dev 3 | 2h |
 | app.py: Criar UI de upload (US1) | US1 | Dev 1 (UI) | 4h |
 | database.py: Salvar dados do upload no SQLite | US1 | Dev 2 (Data) | 6h |
@@ -40,3 +40,61 @@ Dev 3 (IA/LLM): Foca no módulo de predição (chamadas ao LLM).
 | app.py: UI de visualização dos resultados (US2, US3) | US2, US3 | Dev 1 (UI) | 8h |
 | Integração Final e Testes	|   | Todos | 5h |
 | Total | | | 48 horas |
+
+### Database.py Proposto
+Em vez de SQL puro, a IA gera o módulo database.py que cria o banco de dados.
+```
+# Módulo: database.py
+import sqlite3
+
+# O arquivo do banco de dados
+DB_FILE = "hemoscope.db"
+
+# SQL para criar as tabelas (o mesmo schema, mas em sintaxe SQLite)
+SQL_CREATE_TABLES = """
+CREATE TABLE IF NOT EXISTS Patients (
+    patient_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    age INT,
+    gender VARCHAR(10)
+);
+
+CREATE TABLE IF NOT EXISTS ClinicalData (
+    data_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_id INTEGER REFERENCES Patients(patient_id),
+    reading_date DATE NOT NULL,
+    cd4_count INT,
+    viral_load INT,
+    current_treatment_regimen TEXT,
+    UNIQUE(patient_id, reading_date)
+);
+
+CREATE TABLE IF NOT EXISTS Predictions (
+    prediction_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_id INTEGER REFERENCES Patients(patient_id),
+    prediction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    predicted_cd4_6mo INT,
+    predicted_viral_load_6mo INT,
+    resistance_risk_score REAL
+);
+"""
+
+def initialize_database():
+    """Cria o arquivo .db e as tabelas se não existirem."""
+    try:
+        conn = sqlite3.connect(DB_FILE)
+        cursor = conn.cursor()
+        cursor.executescript(SQL_CREATE_TABLES) # Executa múltiplos statements
+        conn.commit()
+        print("Banco de dados SQLite inicializado com sucesso.")
+    except sqlite3.Error as e:
+        print(f"Erro ao inicializar o banco de dados: {e}")
+    finally:
+        if conn:
+            conn.close()
+
+# (Aqui também entrariam funções como: 
+#  def add_patient_data(patient_data): ...)
+#  def get_patient_history(patient_id): ...)
+# )
+```
