@@ -1,4 +1,4 @@
-# HEMOSCOPE-X - Software especializado em hemogramas e dados clínicos
+# HEMOSCOPE-X | Software especializado em hemogramas e dados clínicos
 ## Origem
 A ferramenta **HEMOSCOPE-X** surgiu devido à disciplina [*Tópicos em Engenharia de Software*](https://github.com/kyriosdata/EngenheiroAumentado), na qual nós, alunos da *Universidade Federal de Goiás*, utilizamos modelos de inteligência artificial para assistirmos no desenvolvimento de softwares na área da saúde.
 ## Objetivo
