@@ -1,5 +1,5 @@
-= Documento de Especificação de Requisitos de Software (ERS) =
-= Projeto: HIV-Predict-Software =
+# Documento de Especificação de Requisitos de Software (ERS)
+# Projeto: HIV-Predict-Software
 
 ### 1. Introdução
 
@@ -115,6 +115,7 @@
 
 ##### 3.2.4. Usabilidade
 * **RNF-USA-001:** O sistema deve ser operável por profissionais de saúde com proficiência básica em informática, sem a necessidade de treinamento extensivo. O fluxo de upload (RF-004) e visualização (RF-008) deve ser concluído em, no máximo, 3 cliques.
+
 
 
 
