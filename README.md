@@ -27,3 +27,10 @@ Seção de discussão dos conhecimentos adquiridos por semana conforme desenvolv
 - [ ] Semana 24/11
 - [ ] Semana 1/12
 - [ ] Semana 8/12
+
+### Utilidades
+Sites, repositórios ou aplicações que podemos utilizar posteriormente para auxílio no desenvolvimento.
+- [Exemplo de Hemograma](https://fhir.saude.go.gov.br/r4/exame/hemograma.html#exames-simples-todos-eles)
+- [Proposta de Software para o Estado de Goiás](https://github.com/kyriosdata/EngenheiroAumentado/blob/main/docs/previsao-demanda-hematologia.md)
+- [É possível identificar HIV somente por um hemograma?](https://labvital.com.br/atraves-do-hemograma-e-possivel-diagnosticar-o-paciente-com-hiv/)
+- [Notion semana 3/11 e prévias](https://www.notion.so/ONBOARDING-Sistema-de-Apoio-Vigil-ncia-Epidemiol-gica-de-HIV-Baseado-em-An-lise-de-Hemogramas-27efd16c5c7f80438065c2d4db1f56a2)
