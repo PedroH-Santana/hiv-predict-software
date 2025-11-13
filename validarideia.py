@@ -1,3 +1,10 @@
+"""
+O código foi desenvolvido primordialmente para validação de ideias
+e para testes de implementação de inteligência artificial utilizando
+modelos e APIs.
+
+Este **NÃO É O CÓDIGO FINAL** e foi utilizado somente para testes
+"""
 
 from google import genai
 from google.genai import types
