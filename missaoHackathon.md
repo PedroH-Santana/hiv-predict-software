@@ -1,4 +1,5 @@
 # Planejamento Ágil Simplificado
+> [chat do gemini](https://gemini.google.com/share/e8b5b9f13cb7)
 
 ## Prompt
 O prompt utilizado para gerar os seguintes dados está exposto abaixo. Depois do resultado gerado, ainda pedi para que a saída fosse ainda mais simplificada e reduzida a uma só linguagem, Python.
