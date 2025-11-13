@@ -23,6 +23,7 @@ Seção de discussão dos conhecimentos adquiridos por semana conforme desenvolv
 
 ## Diagrama
 Na missão 2 _"Hackathon"_ é requisitado um diagrama de arquitetura inteligente. Diante disso, o modelo gerou o seguinte diagrama de arquitetura (Monolith Streamlit) simplificada:
+> 
 ![mermaidlive-diagram](diagrama.png)
 
 - [x] Semana 3/11 & prévias - Notion para esclarecimento de tarefa, informações e ideias.
