@@ -79,5 +79,3 @@ A progressão documentada mostra a evolução lógica de um problema amplo até 
 - [ ]  Rodar o protótipo e validar os relatórios gerados.
 - [ ]  Documentar resultados técnicos.
 - [ ]  Preparar a apresentação final do projeto.
-
-[É realmente possível identificar HIV com hemogramas?](https://labvital.com.br/atraves-do-hemograma-e-possivel-diagnosticar-o-paciente-com-hiv/)
