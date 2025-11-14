@@ -12,7 +12,7 @@ Arquitetura Inteligente: gere diagramas de arquitetura (usando formatos como Pla
 Gere a documentação correspondente para cada um dos componentes identificados.
 Revise o planejamento. Provavelmente o planejamento deve ser atualizado para refletir o conhecimento acumulado com a definição da arquitetura e dos componentes.
 ```
-
+#!!! corrigir histórias
 ## História de Usuários (Backlog Inicial)
 - US1 (Core): Eu, como profissional de saúde, quero fazer o upload de dados estruturados de um paciente (ex: CSV, JSON contendo histórico de CD4, carga viral, genotipagem) para que o sistema possa analisá-los.
 - US2 (Core): Eu, como profissional de saúde, quero selecionar um paciente e visualizar a previsão de progressão da doença (ex: mudança estimada na Carga Viral/CD4) nos próximos 6 meses, para ajustar o monitoramento.
