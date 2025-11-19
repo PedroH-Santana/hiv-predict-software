@@ -43,3 +43,5 @@ Sites, repositórios ou aplicações que podemos utilizar posteriormente para au
 
 # [Produto](https://github.com/PedroH-Santana/hiv-predict-software/tree/hiv-predict-hemoscope)
 A aplicação desenvolvida com base nos requisitos, arquitetura e diagrama de software do projeto está disponibilizada na branch [hiv-predict-hemoscope](https://github.com/PedroH-Santana/hiv-predict-software/tree/hiv-predict-hemoscope) juntamente com um [tutorial](https://github.com/PedroH-Santana/hiv-predict-software/blob/hiv-predict-hemoscope/README.md) de como utilizá-la.
+## Gerador de Hemogramas
+O arquivo [gerar_hemogramaPDF.py](https://github.com/PedroH-Santana/hiv-predict-software/blob/main/gerar_hemogramaPDF.py) procura gerar PDFs de hemogramas para testar o produto final.
