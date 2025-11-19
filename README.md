@@ -38,6 +38,8 @@ Sites, repositórios ou aplicações que podemos utilizar posteriormente para au
 - [Proposta de Software para o Estado de Goiás](https://github.com/kyriosdata/EngenheiroAumentado/blob/main/docs/previsao-demanda-hematologia.md)
 - [É possível identificar HIV somente por um hemograma?](https://labvital.com.br/atraves-do-hemograma-e-possivel-diagnosticar-o-paciente-com-hiv/)
 - [Notion semana 3/11 e prévias](https://www.notion.so/ONBOARDING-Sistema-de-Apoio-Vigil-ncia-Epidemiol-gica-de-HIV-Baseado-em-An-lise-de-Hemogramas-27efd16c5c7f80438065c2d4db1f56a2)
-  
+
+-----
+
 # [Produto](https://github.com/PedroH-Santana/hiv-predict-software/tree/hiv-predict-hemoscope)
 A aplicação desenvolvida com base nos requisitos, arquitetura e diagrama de software do projeto está disponibilizada na branch [hiv-predict-hemoscope](https://github.com/PedroH-Santana/hiv-predict-software/tree/hiv-predict-hemoscope) juntamente com um [tutorial](https://github.com/PedroH-Santana/hiv-predict-software/blob/hiv-predict-hemoscope/README.md) de como utilizá-la.
