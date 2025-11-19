@@ -1,0 +1,13 @@
+.env
+env
+
+secret.key
+hemoscope.db
+
+/venv
+venv/
+.venv
+
+__pycache__
+/__pycache__
+__pycache__/

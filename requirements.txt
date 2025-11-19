@@ -1,0 +1,7 @@
+flask
+streamlit
+pypdf
+cryptography
+google-generativeai
+requests
+python-dotenv
