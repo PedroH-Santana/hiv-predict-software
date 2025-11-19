@@ -142,7 +142,7 @@ O Streamlit inicializará e abrirá automaticamente uma nova aba no seu navegado
 1.  **Cadastro de Paciente:** Na barra lateral da interface web, insira um nome e CPF fictícios e clique em **Cadastrar Paciente**. O sistema retornará um ID.
 2.  **Upload e Análise:**
       * Na área principal, insira o **ID do Paciente** que acabou de ser gerado.
-      * Faça o upload de um arquivo PDF contendo um hemograma (certifique-se de que o PDF contém texto selecionável, não apenas imagem).
+      * Faça o upload de um arquivo PDF contendo um hemograma (certifique-se de que o PDF contém texto selecionável, não apenas imagem). Vale ressaltar que o arquivo na branch _main_ [gerar_hemogramaPDF.py](https://github.com/PedroH-Santana/hiv-predict-software/blob/main/gerar_hemogramaPDF.py) permite que você crie um hemograma teste para usar na aplicação.
       * Clique em **Processar e Analisar**.
 3.  **Resultados:** Aguarde alguns segundos. O sistema exibirá o Score, Classificação, Sugestão de Conduta e o Aviso Legal.
 
