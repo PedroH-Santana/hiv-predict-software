@@ -22,7 +22,7 @@ A arquitetura do projeto designa as métricas que serão seguidas para que o sof
 Seção de discussão dos conhecimentos adquiridos por semana conforme desenvolvemos a ferramenta e estudamos Tópicos de Engenharia de Software.
 - [x] Semana 2/11 & prévias - Notion para esclarecimento de tarefa, informações e ideias.
 - [x] Semana 9/11 - Construção e aprimoramento de requisitos, arquitetura, etc.
-- [ ] Semana 16/11
+- [x] Semana 16/11 - Criando aplicação baseada nos requisitos.
 - [ ] Semana 23/11
 - [ ] Semana 30/11
 - [ ] Semana 7/12
@@ -31,6 +31,9 @@ Seção de discussão dos conhecimentos adquiridos por semana conforme desenvolv
 Na missão 2 _"Hackathon"_ é requisitado um diagrama de arquitetura inteligente. Diante disso, o modelo gerou o seguinte diagrama de arquitetura (Monolith Streamlit) simplificada:
 > 
 ![mermaidlive-diagram](diagram.png)
+
+## [Produto](https://github.com/PedroH-Santana/hiv-predict-software/tree/hiv-predict-hemoscope)
+A aplicação desenvolvida com base nos requisitos, arquitetura e diagrama de software do projeto está disponibilizada na branch [hiv-predict-hemoscope](https://github.com/PedroH-Santana/hiv-predict-software/tree/hiv-predict-hemoscope) juntamente com um tutorial de como utilizá-la.
 
 ### Utilidades
 Sites, repositórios ou aplicações que podemos utilizar posteriormente para auxílio no desenvolvimento.
