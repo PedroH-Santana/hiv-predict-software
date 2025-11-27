@@ -12,93 +12,33 @@ Arquitetura Inteligente: gere diagramas de arquitetura (usando formatos como Pla
 Gere a documentação correspondente para cada um dos componentes identificados.
 Revise o planejamento. Provavelmente o planejamento deve ser atualizado para refletir o conhecimento acumulado com a definição da arquitetura e dos componentes.
 ```
-#!!! corrigir histórias
-## História de Usuários (Backlog Inicial)
-- US1 (Core): Eu, como profissional de saúde, quero fazer o upload de dados estruturados de um paciente (ex: CSV, JSON contendo histórico de CD4, carga viral, genotipagem) para que o sistema possa analisá-los.
-- US2 (Core): Eu, como profissional de saúde, quero selecionar um paciente e visualizar a previsão de progressão da doença (ex: mudança estimada na Carga Viral/CD4) nos próximos 6 meses, para ajustar o monitoramento.
-- US3 (Core): Eu, como profissional de saúde, quero selecionar um paciente e visualizar o risco de resistência aos medicamentos antirretrovirais (TARV) atuais, para tomar decisões informadas sobre a terapia.
-- US4 (Valor Agregado): Eu, como profissional de saúde, quero simular a eficácia de diferentes esquemas de tratamento (ex: mudar Medicamento A para B) e ver a previsão de progressão resultante.
-- US5 (UI/UX): Eu, como profissional de saúde, quero ter um dashboard simples que liste meus pacientes cadastrados e seus níveis de risco atuais (Progressão/Resistência) em um piscar de olhos.
-> Verificação de Coerência: O conjunto de histórias está coerente. Elas cobrem o fluxo central: Entrada de Dados (US1), Processamento/Predição (US2, US3) e Apoio à Decisão (US3, US4). A US5 fornece a interface de visualização.
+## Histórias de Usuário (Backlog Inicial)
+- **US1 (Core):** Eu, como profissional de saúde, quero fazer o upload do hemograma do meu paciente (PDF), para que o sistema possa extrair os dados e me retornar uma análise sobre a possibilidade desse paciente possuir HIV.
+- **US2 (Valor Agregado):** Eu, como profissional de saúde, quero que o sistema destaque quais indicadores do hemograma levaram à suspeita, para me auxiliar na identificação técnica dos vestígios do vírus.
+- **US3 (UI/UX):** Eu, como profissional de saúde, preciso de uma interface simples de upload de arquivos PDF e um retorno visual claro, indicando se há vestígios (Sim/Não) e listando as informações que levaram a essa decisão.
 
-## Plano do Sprint
-A equipe de 3 pessoas agora tem tarefas muito mais integradas:
+# Plano do Sprint
+A equipe de 3 pessoas agora tem tarefas integradas para o desenvolvimento do MVP em Streamlit.
 
-Dev 1 (Flask/UI): Foca na interface (componentes st.file_uploader, st.button, st.line_chart).
-Dev 2 (Data/Lógica): Foca no parser dos dados e na lógica de banco de dados (SQLite/Pandas).
-Dev 3 (IA/LLM): Foca no módulo de predição (chamadas ao LLM).
+## Definição de Papéis:
+- **Dev 1 (Streamlit/UI):** Foca na interface (componentes `st.file_uploader`, `st.metric`, visualização de texto).
+- **Dev 2 (Data/Lógica):** Foca na extração de texto do PDF (`pdf_parser.py`) e estruturação dos dados para envio.
+- **Dev 3 (IA/LLM):** Foca na engenharia de prompt para detecção de padrões e explicação médica.
 
-| Tarefa | História (US) | Responsável (Dev) | Estimativa (Horas) |
-| --------------------- | --------------------- | --------------------- | --------------------- |
-| Configurar ambiente (venv, pip install streamlit) | Todos | Dev 1 | 1h |
-| Criar módulo database.py | US1 | Dev 2 | 2h |
-| Criar módulo predictor.py (função de chamada LLM) | US2, US3 | Dev 3 | 2h |
-| app.py: Criar UI de upload (US1) | US1 | Dev 1 (UI) | 4h |
-| database.py: Salvar dados do upload no SQLite | US1 | Dev 2 (Data) | 6h |
-| predictor.py: Criar prompt e lógica para US2 (Progressão) | US2 | Dev 3 (IA) | 8h |
-| predictor.py: Criar prompt e lógica para US3 (Resistência) | US3 | Dev 3 (IA) | 6h |
-| app.py: Lógica do botão "Analisar" (Chamar DB e Predictor) | US2, US3 | Dev 2 (Data) | 6h |
-| app.py: UI de visualização dos resultados (US2, US3) | US2, US3 | Dev 1 (UI) | 8h |
-| Integração Final e Testes	|   | Todos | 5h |
-| Total | | | 48 horas |
+## Cronograma de Tarefas:
+| Tarefa | História | Responsável | Estimativa (Horas) |
+|--------|----------|-------------|-------------------|
+| Configurar ambiente (venv, pip install streamlit, pypdf) | U$1 | Dev 1 | 1h |
+| Criar módulo pdf_parser.py (Extração de texto do PDF) | U$1 | Dev 2 (Data) | 3h |
+| Criar módulo predictor.py (Configuração da API LLM) | U$1 | Dev 3 (IA) | 2h |
+| app.py: Criar UI de upload e validação de arquivo | U$1, US$3 | Dev 1 (UI) | 4h |
+| predictor.py: Prompt para análise de risco (Lógica da US1) | U$1 | Dev 3 (IA) | 6h |
+| predictor.py: Prompt para destacar evidências/justificativas | US$2 | Dev 3 (IA) | 6h |
+| app.py: Lógica do botão "Analisar" (Integra Parser + LLM) | U$1 | Dev 2 (Data) | 5h |
+| app.py: UI de exibição de resultados e justificativas | US$3 | Dev 1 (UI) | 6h |
+| Refinamento dos Prompts (Melhorar acurácia da análise) | US$2 | Dev 3 (IA) | 4h |
+| Integração Final, Testes de Usabilidade e Bugfix | - | Todos | 6h |
+| **Total** | | | **43 horas** |
 
 ## Diagrama Proposto
 ![mermaidlive-diagram](diagram.png)
-
-### Database.py Proposto
-Em vez de SQL puro, a IA gera o módulo database.py que cria o banco de dados.
-```
-# Módulo: database.py
-import sqlite3
-
-# O arquivo do banco de dados
-DB_FILE = "hemoscope.db"
-
-# SQL para criar as tabelas (o mesmo schema, mas em sintaxe SQLite)
-SQL_CREATE_TABLES = """
-CREATE TABLE IF NOT EXISTS Patients (
-    patient_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    age INT,
-    gender VARCHAR(10)
-);
-
-CREATE TABLE IF NOT EXISTS ClinicalData (
-    data_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    patient_id INTEGER REFERENCES Patients(patient_id),
-    reading_date DATE NOT NULL,
-    cd4_count INT,
-    viral_load INT,
-    current_treatment_regimen TEXT,
-    UNIQUE(patient_id, reading_date)
-);
-
-CREATE TABLE IF NOT EXISTS Predictions (
-    prediction_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    patient_id INTEGER REFERENCES Patients(patient_id),
-    prediction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    predicted_cd4_6mo INT,
-    predicted_viral_load_6mo INT,
-    resistance_risk_score REAL
-);
-"""
-
-def initialize_database():
-    """Cria o arquivo .db e as tabelas se não existirem."""
-    try:
-        conn = sqlite3.connect(DB_FILE)
-        cursor = conn.cursor()
-        cursor.executescript(SQL_CREATE_TABLES) # Executa múltiplos statements
-        conn.commit()
-        print("Banco de dados SQLite inicializado com sucesso.")
-    except sqlite3.Error as e:
-        print(f"Erro ao inicializar o banco de dados: {e}")
-    finally:
-        if conn:
-            conn.close()
-
-# (Aqui também entrariam funções como: 
-#  def add_patient_data(patient_data): ...)
-#  def get_patient_history(patient_id): ...)
-# )
-```
