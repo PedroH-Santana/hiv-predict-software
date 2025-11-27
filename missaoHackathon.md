@@ -41,4 +41,5 @@ A equipe de 3 pessoas agora tem tarefas integradas para o desenvolvimento do MVP
 | **Total** | | | **43 horas** |
 
 ## Diagrama Proposto
-![mermaidlive-diagram](diagram.png)
+![Diagrama](diagram.png)
+
